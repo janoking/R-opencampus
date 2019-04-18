@@ -1,0 +1,26 @@
+airQuality = airquality
+
+Tempera = airQuality$Temp
+
+# durchschnittstemperatur
+
+print (median(Tempera))
+
+# durchschnittstemperatur Juli  [62 - 92]
+
+Juli = (Tempera[62:92])
+Mai = (Tempera[1:31])
+
+median.Juli = (median(Juli))
+median.Mai = (median(Mai))
+
+print(median.Mai)
+print(median.Juli)
+
+
+#Vergleich Juli & Mai
+
+tempframe <- data.frame(Mai,Juli)
+print(tempframe)
+
+median.Juli - median.Mai
